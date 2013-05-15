@@ -1,0 +1,12 @@
+<% if @url %>
+  <% if @url.invalid? %>
+    <% @url.errors.full_messages.each do |msg| %>
+      <%= msg %>
+    <% end %>
+  <% else %>
+    <a href=/<%= @url.short %>>
+      chop/<%= @url.short %>
+    </a>
+  <% end %>
+<% end %>
+<div>

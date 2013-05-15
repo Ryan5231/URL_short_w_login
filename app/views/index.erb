@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Welcome to Choppy Chop!</h1>
+  <p>Post your link and I'll chop it!</p>
+
+  <form action='/urls' method='post'>
+    <input type='text' name='long_url'>
+    <input type='submit' value='Chop it!'>
+  </form>
+  
+  <br>
+  <div class='link'>
+    <%= erb :_link %>
+  </div>
+</div>
