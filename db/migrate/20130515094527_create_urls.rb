@@ -4,6 +4,7 @@ class CreateUrls < ActiveRecord::Migration
       t.text :short
       t.text :long
       t.integer :counter, :default => 0
+      t.references :user
 
       t.timestamps
     end

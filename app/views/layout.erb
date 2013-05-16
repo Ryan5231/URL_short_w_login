@@ -19,5 +19,10 @@
 </head>
 <body>
   <%= yield %>
+  <div class='container'>
+    <% if current_user %>
+      <a href='/logout'>log out</a>
+    <% end %>
+  </div>
 </body>
 </html>

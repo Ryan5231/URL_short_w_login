@@ -5,8 +5,17 @@
   <form action='/urls' method='post'>
     <input type='text' name='long_url'>
     <input type='submit' value='Chop it!'>
-  </form>
+  </form><br>
   
+ 
+    <% if current_user %>
+      <a href='/logout'>log out</a>
+    <% else %>
+      <a href='/createaccount' class='creation'>Create Account</a><br><br>
+      <a href='/login' class='creation'>Log In</a><br><br>
+    <% end %>
+
+
   <br>
   <div class='link'>
     <%= erb :_link %>
